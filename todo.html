@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="todo">
+      <div class="todo_container">
+        <div class="todo_overtop"></div>
+        <div class="todo_body">
+          <div class="todo_head">To-do list</div>
+          <div class="todo_sort">
+            <div class="todo_sort_icon">
+              <svg
+                width="25"
+                height="15"
+                viewBox="0 0 25 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="2.5" width="2.5" height="12.5" fill="#C4C4C4" />
+                <rect
+                  x="10"
+                  y="3.75"
+                  width="2.5"
+                  height="7.5"
+                  transform="rotate(-90 10 3.75)"
+                  fill="#C4C4C4"
+                />
+                <rect
+                  x="10"
+                  y="8.75"
+                  width="2.5"
+                  height="10"
+                  transform="rotate(-90 10 8.75)"
+                  fill="#C4C4C4"
+                />
+                <rect
+                  x="10"
+                  y="13.75"
+                  width="2.5"
+                  height="15"
+                  transform="rotate(-90 10 13.75)"
+                  fill="#C4C4C4"
+                />
+                <path
+                  d="M3.75 15L0.502405 10.3125L6.9976 10.3125L3.75 15Z"
+                  fill="#C4C4C4"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="todo_content">
+            <div class="todo_content_input">
+              <input
+                type="text"
+                name="text"
+                id="todoInput"
+                class="todo_content_input--input"
+                placeholder="Type Something..."
+              />
+              <div class="todo_content_list_item_delete" id="deleteBtn">
+                <svg
+                  id="deleteTskBtn"
+                  class=""
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 20.5C5.7533 20.5 1.5 16.2467 1.5 11H0.5C0.5 16.799 5.20101 21.5 11 21.5V20.5ZM20.5 11C20.5 16.2467 16.2467 20.5 11 20.5V21.5C16.799 21.5 21.5 16.799 21.5 11H20.5ZM11 1.5C16.2467 1.5 20.5 5.7533 20.5 11H21.5C21.5 5.20101 16.799 0.5 11 0.5V1.5ZM11 0.5C5.20101 0.5 0.5 5.20101 0.5 11H1.5C1.5 5.7533 5.7533 1.5 11 1.5V0.5ZM6.64645 7.35355L10.6464 11.3536L11.3536 10.6464L7.35355 6.64645L6.64645 7.35355ZM10.6464 11.3536L14.6464 15.3536L15.3536 14.6464L11.3536 10.6464L10.6464 11.3536ZM7.35355 15.3536L11.3536 11.3536L10.6464 10.6464L6.64645 14.6464L7.35355 15.3536ZM11.3536 11.3536L15.3536 7.35355L14.6464 6.64645L10.6464 10.6464L11.3536 11.3536Z"
+                    fill="#C4C4C4"
+                  />
+                </svg>
+              </div>
+            </div>
+            <ul class="todo_content_list"></ul>
+          </div>
+          <button class="todo_addBtn" id="todo_addBtn">
+            <div class="todo_addBtn_icon">
+              <div class="todo_addBtn_icon_plus">+</div>
+            </div>
+            <div class="todo_addBtn_text">Добавить</div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
